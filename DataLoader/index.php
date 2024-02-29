@@ -27,7 +27,7 @@ include('index_functions.php');
 
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("tableContainer").innerHTML = ""; // Clear existing content
+                    document.getElementById("tableContainer").innerHTML = "";
                     document.getElementById("tableContainer").innerHTML = this.responseText;
                 }
             };
